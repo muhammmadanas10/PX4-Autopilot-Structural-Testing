@@ -1,0 +1,42 @@
+# Explicitly ignore external repository, build artifacts, and editor temporary files
+PX4-Autopilot/
+build/
+.cache/
+.vscode/
+.idea/
+*.tmp
+*.swp
+*~
+__pycache__/
+.DS_Store
+
+# Ignore everything by default
+/*
+
+# Whitelist repo files and required deliverable folders
+!.gitignore
+!.gitattributes
+!/.github/
+!/.github/**
+!/README.md
+!/SQE-Assignment02.pdf
+!/report/
+!/report/**
+!/analysis/
+!/analysis/**
+!/design/
+!/design/**
+!/evidence/
+!/evidence/**
+!/deliverables/
+!/deliverables/**
+!/patches/
+!/patches/**
+!/docs/
+!/docs/**
+!/workbook/
+!/workbook/**
+!/scripts/
+!/scripts/**
+/scripts/bin/python3
+/scripts/python_deps/
