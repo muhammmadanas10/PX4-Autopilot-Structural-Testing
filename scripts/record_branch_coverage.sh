@@ -53,7 +53,7 @@ if command -v lcov &> /dev/null; then
          --capture \
          --rc lcov_branch_coverage=1 \
          --rc branch_coverage=1 \
-         --ignore-errors gcov \
+         --ignore-errors gcov,mismatch \
          -o "$OUT_DIR/raw_coverage.info"
 
     echo "======================================================================"
